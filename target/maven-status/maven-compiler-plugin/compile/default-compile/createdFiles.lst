@@ -1,3 +1,4 @@
+com\svalero\servlet\DeleteClientServlet.class
 com\svalero\DAO\ProductMapper.class
 com\svalero\DAO\ProductDAO.class
 com\svalero\servlet\AddClientServlet.class

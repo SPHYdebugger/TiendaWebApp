@@ -26,7 +26,8 @@ public interface Buy_DAO {
     @UseRowMapper(BuyMapper.class)
     List<Buy> searchClientBuy(int id_client);
 
-
+    @SqlUpdate("DELETE FROM buys WHERE id_client = ?")
+    void deleteBuyByClient(int id_client);
 
 
 }

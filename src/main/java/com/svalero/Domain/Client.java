@@ -17,7 +17,7 @@ public class Client {
     @NonNull
     private String lastName;
     @NonNull
-    private String DNI;
+    private String dni;
     @NonNull
     private String address;
     @NonNull

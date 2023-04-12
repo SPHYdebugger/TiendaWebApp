@@ -41,6 +41,8 @@ public interface ClientDAO2 {
     Client searchClient(int id_client);
 
 
+    @SqlUpdate("DELETE FROM clients WHERE id_client=?")
+    void deleteClient(int id);
 
 
 

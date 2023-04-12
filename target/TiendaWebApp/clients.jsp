@@ -49,10 +49,10 @@
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
                   <button type="button" class="btn btn-sm btn-outline-secondary">EDITAR</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">BORRAR</button>
+                  <a href="deleteClient?id=<%= client.getId_client()%>" class="btn btn-sm btn-outline-secondary">BORRAR</a>
                   <a href="detailsClient.jsp?id=<%= client.getId_client()%>" class="btn btn-sm btn-outline-secondary">VER DETALLES</a>
                 </div>
-                <small class="text-body-secondary"><%= client.getDNI() %> </small>
+                <small class="text-body-secondary"><%= client.getDni() %> </small>
               </div>
             </div>
           </div>
