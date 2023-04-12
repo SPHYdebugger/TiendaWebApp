@@ -22,7 +22,8 @@ public class ProductMapper implements RowMapper<Product> {
                 rs.getString("name_p"),
                 rs.getString("description_p"),
                 rs.getInt("format_p"),
-                rs.getFloat("price")
+                rs.getFloat("price"),
+                rs.getString("image")
 
         );
     }

@@ -9,10 +9,13 @@ C:\Users\sanph\IdeaProjects\TiendaWebApp\src\main\java\com\svalero\DAO\ProductDA
 C:\Users\sanph\IdeaProjects\TiendaWebApp\src\main\java\com\svalero\servlet\EditClientImageServlet.java
 C:\Users\sanph\IdeaProjects\TiendaWebApp\src\main\java\com\svalero\Domain\Product.java
 C:\Users\sanph\IdeaProjects\TiendaWebApp\src\main\java\com\svalero\servlet\DeleteClientServlet.java
+C:\Users\sanph\IdeaProjects\TiendaWebApp\src\main\java\com\svalero\servlet\DeleteProductServlet.java
 C:\Users\sanph\IdeaProjects\TiendaWebApp\src\main\java\com\svalero\servlet\EditClientServlet.java
 C:\Users\sanph\IdeaProjects\TiendaWebApp\src\main\java\com\svalero\util\Constants.java
 C:\Users\sanph\IdeaProjects\TiendaWebApp\src\main\java\com\svalero\DAO\ClientMapper.java
+C:\Users\sanph\IdeaProjects\TiendaWebApp\src\main\java\com\svalero\servlet\AddProductServlet.java
 C:\Users\sanph\IdeaProjects\TiendaWebApp\src\main\java\com\svalero\servlet\DeleteBuyServlet.java
+C:\Users\sanph\IdeaProjects\TiendaWebApp\src\main\java\com\svalero\servlet\EditProductServlet.java
 C:\Users\sanph\IdeaProjects\TiendaWebApp\src\main\java\com\svalero\Domain\Client.java
 C:\Users\sanph\IdeaProjects\TiendaWebApp\src\main\java\com\svalero\servlet\AddBuyServlet.java
 C:\Users\sanph\IdeaProjects\TiendaWebApp\src\main\java\com\svalero\DAO\BuyMapper.java

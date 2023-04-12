@@ -16,18 +16,20 @@ public interface ProductDAO {
     @UseRowMapper(ProductMapper.class)
     List<Product> getProducts();
 
-    @SqlUpdate("INSERT INTO products (name_p, description_p, format_p, price) VALUES (?, ?, ?, ?)")
-    void addProduct(String name, String description, int format, float price);
+    @SqlUpdate("INSERT INTO products (name_p, description_p, format_p, price, image) VALUES (?, ?, ?, ?, ?)")
+    void addProduct(String name, String description, int format, float price, String image);
 
-    @SqlUpdate("DELETE FROM buys WHERE id_product = ?")
+    @SqlUpdate("DELETE FROM products WHERE id_product = ?")
     void deleteProduct(int id_product);
 
 
-    @SqlQuery("SELECT * FROM product WHERE id_product = ?")
+    @SqlQuery("SELECT * FROM products WHERE id_product = ?")
     @UseRowMapper(ProductMapper.class)
-    List<Buy> searchProduct(int id_product);
+    Product searchProduct(int id_product);
 
-
+    @SqlUpdate("UPDATE products SET name_p = ?, description_p = ?, format_p = ?," +
+            "price = ? WHERE ID_PRODUCT= ?")
+    void modifyProduct(String name_p, String description_p, int format_p, float price, int id_product);
 
 
 }

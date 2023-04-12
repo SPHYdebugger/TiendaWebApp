@@ -20,6 +20,8 @@ public class Product {
     private int format_p;
     @NonNull
     private float price;
+    @NonNull
+    String image;
 
 
 
