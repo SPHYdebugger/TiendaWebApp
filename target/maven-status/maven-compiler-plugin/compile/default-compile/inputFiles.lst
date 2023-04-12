@@ -1,6 +1,7 @@
 C:\Users\sanph\IdeaProjects\TiendaWebApp\src\main\java\com\svalero\DAO\ProductMapper.java
 C:\Users\sanph\IdeaProjects\TiendaWebApp\src\main\java\com\svalero\Domain\Buy.java
 C:\Users\sanph\IdeaProjects\TiendaWebApp\src\main\java\com\svalero\DAO\ClientDAO2.java
+C:\Users\sanph\IdeaProjects\TiendaWebApp\src\main\java\com\svalero\servlet\AddClientServlet.java
 C:\Users\sanph\IdeaProjects\TiendaWebApp\src\main\java\com\svalero\DAO\Database.java
 C:\Users\sanph\IdeaProjects\TiendaWebApp\src\main\java\com\svalero\DAO\Buy_DAO.java
 C:\Users\sanph\IdeaProjects\TiendaWebApp\src\main\java\com\svalero\DAO\ClientDAO.java
@@ -8,7 +9,5 @@ C:\Users\sanph\IdeaProjects\TiendaWebApp\src\main\java\com\svalero\DAO\ProductDA
 C:\Users\sanph\IdeaProjects\TiendaWebApp\src\main\java\com\svalero\Domain\Product.java
 C:\Users\sanph\IdeaProjects\TiendaWebApp\src\main\java\com\svalero\util\Constants.java
 C:\Users\sanph\IdeaProjects\TiendaWebApp\src\main\java\com\svalero\DAO\ClientMapper.java
-C:\Users\sanph\IdeaProjects\TiendaWebApp\src\main\java\com\svalero\Application.java
 C:\Users\sanph\IdeaProjects\TiendaWebApp\src\main\java\com\svalero\Domain\Client.java
-C:\Users\sanph\IdeaProjects\TiendaWebApp\src\main\java\com\svalero\Menu.java
 C:\Users\sanph\IdeaProjects\TiendaWebApp\src\main\java\com\svalero\DAO\BuyMapper.java

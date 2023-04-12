@@ -22,6 +22,8 @@ public class ClientMapper implements RowMapper<Client> {
                 rs.getString("city"),
                 rs.getString("email"),
                 rs.getString("password"),
-                rs.getInt("telephone"));
+                rs.getInt("telephone")
+
+        );
     }
 }

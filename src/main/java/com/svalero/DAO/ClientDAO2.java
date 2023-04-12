@@ -1,7 +1,6 @@
 package com.svalero.DAO;
 
 import com.svalero.Domain.Client;
-import com.svalero.Domain.Client;
 import org.jdbi.v3.sqlobject.statement.SqlQuery;
 import org.jdbi.v3.sqlobject.statement.SqlUpdate;
 import org.jdbi.v3.sqlobject.statement.UseRowMapper;
@@ -28,7 +27,7 @@ public interface ClientDAO2 {
 
     @SqlUpdate("UPDATE clients SET firstname = ?, lastname = ?, DNI = ?," +
             "address = ?, city = ?, email = ?, password = ?, telephone = ? " +
-            "WHERE ID_CLIENT= ?")
+            " WHERE ID_CLIENT= ?")
     void modifyClient(String firstName, String lastName, String DNI, String address, String city,
                    String email, String password, int telephone, int id_client);
 
