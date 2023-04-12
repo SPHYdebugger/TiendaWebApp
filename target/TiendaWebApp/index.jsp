@@ -74,7 +74,7 @@
             <img class="rounded-circle" src="resources/compras.png" alt="Generic placeholder image" width="140" height="140">
             <h2>COMPRAS</h2>
             <p>Entra si lo que quieres es registrar una compra nueva, editar o borrar una existente, listarlas a todas o buscar una</p>
-            <p><a class="btn btn-secondary" href="#" role="button">ENTRAR &raquo;</a></p>
+            <p><a class="btn btn-secondary" href="buys.jsp" role="button">ENTRAR &raquo;</a></p>
           </div><!-- /.col-lg-4 -->
         </div><!-- /.row -->
 

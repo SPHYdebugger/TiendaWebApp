@@ -38,6 +38,7 @@
                   List<Client> clientsList = Database.jdbi.withExtension(ClientDAO2.class, ClientDAO2::getClients);
                       for (Client client:
                            clientsList) {
+                      int idc = client.getId_client();
                 %>
 
         <div class="col">
@@ -49,7 +50,7 @@
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
                   <a href="editClient.jsp?id=<%= client.getId_client()%>&firstName=<%= client.getFirstName()%>&lastName=<%= client.getLastName()%>&dni=<%= client.getDni()%>&address=<%= client.getAddress()%>&city=<%= client.getCity()%>&email=<%= client.getEmail()%>&password=<%= client.getPassword()%>&telephone=<%= client.getTelephone()%>&image=<%= client.getImage()%>" class="btn btn-sm btn-outline-secondary">EDITAR</a>
-                  <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">BORRAR</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal<%= idc%>">BORRAR</button>
                   <a href="detailsClient.jsp?id=<%= client.getId_client()%>" class="btn btn-sm btn-outline-secondary">VER DETALLES</a>
                 </div>
                 <small class="text-body-secondary"><%= client.getDni() %> </small>
@@ -58,7 +59,7 @@
 
           </div>
         </div>
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="exampleModal<%= idc %>" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-header">
