@@ -28,10 +28,12 @@ public interface ClientDAO2 {
 
     @SqlUpdate("UPDATE clients SET firstname = ?, lastname = ?, DNI = ?," +
             "address = ?, city = ?, email = ?, password = ?, telephone = ? " +
-            ", image = ? WHERE ID_CLIENT= ?")
+            " WHERE ID_CLIENT= ?")
     void modifyClient(String firstName, String lastName, String DNI, String address, String city,
-                   String email, String password, int telephone, String image, int id_client);
+                   String email, String password, int telephone, int id_client);
 
+    @SqlUpdate("UPDATE clients SET image= ? WHERE ID_CLIENT= ?")
+    void modifyImageClient(String image, int id_client);
     @SqlQuery("SELECT * FROM clients WHERE DNI=?")
     @UseRowMapper(ClientMapper.class)
     Client searchClientByDNI(String dni);
