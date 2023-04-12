@@ -35,10 +35,15 @@
         Client client = Database.jdbi.withExtension(ClientDAO2.class, dao -> dao.searchClient(clientId));
 %>
 
+        <div class="container text-center">
+            <img src="../Tienda_data/<%= client.getImage() %>" alt="" style="width: 400px; margin-bottom: 20px; border-radius: 10%;">
+        </div>
+
     <div class="container">
         <div class="row  d-flex justify-content-center">
 
-        <ul class="list-group col-md-2">
+        <ul class="list-group col-2">
+            <li class="list-group-item font-weight-bold">ID</li>
             <li class="list-group-item font-weight-bold">NOMBRE</li>
             <li class="list-group-item font-weight-bold">APELLIDOS</li>
             <li class="list-group-item font-weight-bold">DNI</li>
@@ -49,10 +54,11 @@
             <li class="list-group-item font-weight-bold">TELÉFONO</li>
 
         </ul>
-        <ul class="list-group col-6">
+        <ul class="list-group col-4">
+              <li class="list-group-item"><%= client.getId_client() %></li>
               <li class="list-group-item"><%= client.getFirstName() %></li>
               <li class="list-group-item"><%= client.getLastName() %></li>
-              <li class="list-group-item"><%= client.getDNI() %></li>
+              <li class="list-group-item"><%= client.getDni() %></li>
               <li class="list-group-item"><%= client.getAddress() %></li>
               <li class="list-group-item"><%= client.getCity() %></li>
               <li class="list-group-item"><%= client.getEmail() %></li>
@@ -61,7 +67,11 @@
 
         </ul>
 
+
         </div>
+        <div class="container  d-flex justify-content-center" style="margin-top: 20px;">
+         <a href="editClient.jsp?id=<%= client.getId_client()%>&firstName=<%= client.getFirstName()%>&lastName=<%= client.getLastName()%>&dni=<%= client.getDni()%>&address=<%= client.getAddress()%>&city=<%= client.getCity()%>&email=<%= client.getEmail()%>&password=<%= client.getPassword()%>&telephone=<%= client.getTelephone()%>&image=<%= client.getImage()%>" class="btn btn-primary col-4">EDITAR CLIENTE</a>
+         </div>
         <div class="container  d-flex justify-content-center">
         <a href="clients.jsp" type="button" class="btn btn-primary col-4" style="margin-top: 10px;">Volver a la lista de clientes</a>
         </div>
