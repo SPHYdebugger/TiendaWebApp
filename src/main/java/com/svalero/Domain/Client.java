@@ -28,7 +28,8 @@ public class Client {
     private String password;
     @NonNull
     private int telephone;
-
+    @NonNull
+    private String image;
 
 
 

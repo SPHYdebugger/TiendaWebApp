@@ -32,7 +32,7 @@
 
 
     <div class="container col-6">
-    <form action="addClient" method="post">
+    <form action="addClient" method="post" enctype= "multipart/form-data">
       <div class="mb-3">
         <label for="firstName" class="form-label">NOMBRE</label>
         <input type="text" class="form-control" id="firstName" name="firstName">
@@ -62,10 +62,13 @@
             <input type="password" class="form-control" id="password" name="password">
       </div>
       <div class="mb-3">
-            <label for="telephone" class="form-label">TELÉFONO</label>
-            <input type="int" class="form-control" id="telephone" name="telephone">
+            <label for="telephone" class="form-label">TELEFONO</label>
+            <input type="text" class="form-control" id="telephone" name="telephone">
       </div>
-
+      <div style="margin-bottom: 20px;">
+            <label for="image" class="form-label">Imagen</label>
+            <input type="file" class="form-control" id="image" name="image">
+      </div>
         <div class="container  d-flex justify-content-center">
             <button type="submit" class="btn btn-primary">Confirmar el registro</button>
         </div>

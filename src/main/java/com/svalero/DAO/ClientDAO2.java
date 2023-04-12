@@ -1,6 +1,7 @@
 package com.svalero.DAO;
 
 import com.svalero.Domain.Client;
+import com.svalero.Domain.Client;
 import org.jdbi.v3.sqlobject.statement.SqlQuery;
 import org.jdbi.v3.sqlobject.statement.SqlUpdate;
 import org.jdbi.v3.sqlobject.statement.UseRowMapper;
@@ -17,19 +18,19 @@ public interface ClientDAO2 {
     @UseRowMapper(ClientMapper.class)
     List<Client> getClients();
 
-    @SqlUpdate("INSERT INTO clients (firstname, lastname, DNI, address, city, email, password, telephone)" +
-            " VALUES (?, ?, ?, ?, ?, ?, ?, ?)")
+    @SqlUpdate("INSERT INTO clients (firstname, lastname, DNI, address, city, email, password, telephone, image)" +
+            " VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)")
     void addClient(String firstName, String lastName, String DNI, String address, String city,
-                   String email, String password, int telephone);
+                   String email, String password, int telephone, String image);
 
     @SqlUpdate("DELETE FROM clients WHERE DNI = ?")
     void deleteClient(String dni);
 
     @SqlUpdate("UPDATE clients SET firstname = ?, lastname = ?, DNI = ?," +
             "address = ?, city = ?, email = ?, password = ?, telephone = ? " +
-            " WHERE ID_CLIENT= ?")
+            ", image = ? WHERE ID_CLIENT= ?")
     void modifyClient(String firstName, String lastName, String DNI, String address, String city,
-                   String email, String password, int telephone, int id_client);
+                   String email, String password, int telephone, String image, int id_client);
 
     @SqlQuery("SELECT * FROM clients WHERE DNI=?")
     @UseRowMapper(ClientMapper.class)

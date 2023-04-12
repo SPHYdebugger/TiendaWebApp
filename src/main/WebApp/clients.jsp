@@ -41,8 +41,8 @@
                 %>
 
         <div class="col">
-          <div class="card shadow-sm">
-            <img src="resources/fotocliente.jpg" alt="" style="">
+          <div class="card shadow-sm h-500">
+            <img src="../Tienda_data/<%= client.getImage() %>" alt="" style="">
             <div class="card-body">
               <b class="card-text"><%= client.getFirstName() %></b>
               <p class="card-text"><%= client.getLastName() %></p>
