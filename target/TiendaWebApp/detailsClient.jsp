@@ -17,9 +17,7 @@
         <p class="lead text-body-secondary">Por favor elige una de las siguientes opciones</p>
         <p>
           <a href="#" class="btn btn-primary my-2">Registrar un cliente</a>
-          <a href="#" class="btn btn-primary my-2">Modificar un cliente</a>
-          <a href="#" class="btn btn-primary my-2">Borrar un cliente</a>
-          <a href="#" class="btn btn-primary my-2">Buscar un cliente</a>
+
         </p>
       </div>
     </div>

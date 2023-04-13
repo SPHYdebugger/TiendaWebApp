@@ -16,9 +16,7 @@
         <p class="lead text-body-secondary">Por favor elige una de las siguientes opciones</p>
         <p>
           <a href="registerBuy.jsp" class="btn btn-primary my-2">Registrar una compra</a>
-          <a href="#" class="btn btn-primary my-2">Modificar una compra</a>
-          <a href="#" class="btn btn-primary my-2">Borrar una compra</a>
-          <a href="#" class="btn btn-primary my-2">Buscar una compra</a>
+
         </p>
       </div>
     </div>
@@ -46,8 +44,10 @@
             <li class="list-group-item font-weight-bold">ID CLIENTE COMPRADOR</li>
             <li class="list-group-item font-weight-bold">NOMBRE CLIENTE</li>
             <li class="list-group-item font-weight-bold">APELLIDOS CLIENTE</li>
-            <li class="list-group-item font-weight-bold">DNI CLIENTE</li>
-            <li class="list-group-item font-weight-bold">TELÉFONO CLIENTE</li>
+            <li class="list-group-item font-weight-bold">ID PRODUCTO COMPRADO</li>
+            <li class="list-group-item font-weight-bold">NOMBRE PRDUCTO</li>
+            <li class="list-group-item font-weight-bold">PRECIO PRODUCTO</li>
+
 
 
         </ul>
@@ -57,8 +57,9 @@
               <li class="list-group-item"><%= buy.getClient().getId_client() %></li>
               <li class="list-group-item"><%= buy.getClient().getFirstName() %></li>
               <li class="list-group-item"><%= buy.getClient().getLastName() %></li>
-              <li class="list-group-item"><%= buy.getClient().getDni() %></li>
-              <li class="list-group-item"><%= buy.getClient().getTelephone() %></li>
+              <li class="list-group-item"><%= buy.getProduct().getId_product() %></li>
+              <li class="list-group-item"><%= buy.getProduct().getName_p() %></li>
+              <li class="list-group-item"><%= buy.getProduct().getPrice() %></li>
 
 
 

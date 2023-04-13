@@ -16,9 +16,7 @@
         <p class="lead text-body-secondary">Por favor elige una de las siguientes opciones</p>
         <p>
           <a href="registerClient.jsp" class="btn btn-primary my-2">Registrar una compra</a>
-          <a href="#" class="btn btn-primary my-2">Modificar una compra</a>
-          <a href="#" class="btn btn-primary my-2">Borrar una compra</a>
-          <a href="#" class="btn btn-primary my-2">Buscar una compra</a>
+
         </p>
       </div>
     </div>
@@ -34,6 +32,10 @@
       <div class="mb-3">
         <label for="id_client" class="form-label">ID CLIENTE</label>
         <input type="text" class="form-control" id="id_client" name="id_client">
+      </div>
+      <div class="mb-3">
+         <label for="id_product" class="form-label">ID PRODUCTO</label>
+         <input type="text" class="form-control" id="id_product" name="id_product">
       </div>
       <div class="mb-3">
          <label for="date" class="form-label">FECHA DE COMPRA</label>

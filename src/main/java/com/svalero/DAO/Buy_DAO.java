@@ -15,8 +15,8 @@ public interface Buy_DAO {
     @UseRowMapper(BuyMapper.class)
     List<Buy> getBuy();
 
-    @SqlUpdate("INSERT INTO buys (id_client, buy_date) VALUES (?, ?)")
-    void addBuy(int id_client, LocalDate date);
+    @SqlUpdate("INSERT INTO buys (id_client, id_product, buy_date) VALUES (?, ?, ?)")
+    void addBuy(int id_client, int id_product, LocalDate date);
 
     @SqlUpdate("DELETE FROM buys WHERE id_buy = ?")
     void deleteBuy(int id_buy);

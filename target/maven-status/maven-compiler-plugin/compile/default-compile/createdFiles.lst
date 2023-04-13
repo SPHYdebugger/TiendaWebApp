@@ -6,6 +6,7 @@ com\svalero\servlet\EditClientImageServlet.class
 com\svalero\servlet\DeleteProductServlet.class
 com\svalero\servlet\EditClientServlet.class
 com\svalero\DAO\ProductMapper.class
+com\svalero\DAO\ProductDAO2.class
 com\svalero\DAO\ProductDAO.class
 com\svalero\servlet\DeleteBuyServlet.class
 com\svalero\servlet\AddClientServlet.class

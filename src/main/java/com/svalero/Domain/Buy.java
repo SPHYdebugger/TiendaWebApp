@@ -13,6 +13,7 @@ public class Buy {
 
     private int id_buy;
     private Client client;
+    private Product product;
     @NonNull
     private LocalDate buyDate;
 

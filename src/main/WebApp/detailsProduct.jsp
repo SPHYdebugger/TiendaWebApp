@@ -16,9 +16,7 @@
         <p class="lead text-body-secondary">Por favor elige una de las siguientes opciones</p>
         <p>
           <a href="#" class="btn btn-primary my-2">Registrar un producto</a>
-          <a href="#" class="btn btn-primary my-2">Modificar un producto</a>
-          <a href="#" class="btn btn-primary my-2">Borrar un producto</a>
-          <a href="#" class="btn btn-primary my-2">Buscar un producto</a>
+
         </p>
       </div>
     </div>
@@ -63,7 +61,7 @@
 
         </div>
         <div class="container  d-flex justify-content-center" style="margin-top: 20px;">
-         <a href="" class="btn btn-primary col-4">EDITAR PRODUCTO</a>
+         <a href="editProduct.jsp?id=<%= product.getId_product()%>&name_p=<%= product.getName_p()%>&description=<%= product.getDescription_p()%>&format=<%= product.getFormat_p()%>&price=<%= product.getPrice()%>&&image=<%= product.getImage()%>" class="btn btn-primary col-4">EDITAR PRODUCTO</a>
          </div>
         <div class="container  d-flex justify-content-center">
         <a href="products.jsp" type="button" class="btn btn-primary col-4" style="margin-top: 10px;">Volver a la lista de productos</a>
