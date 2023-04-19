@@ -43,9 +43,10 @@
                   </div>
                   <div class="modal-body">
                     Elija la nueva imagen
-                     <form action="editImageClient" method="post" enctype= "multipart/form-data">
+                     <form action="editImageProduct" method="post" enctype= "multipart/form-data">
                      <div style="margin-bottom: 20px;">
-                                 <label for="image" class="form-label">Imagen</label>
+
+                                 <input type="text" class="form-control" id="id" name="id" value='<%= request.getParameter("id") %>' hidden>
                                  <input type="file" class="form-control" id="image" name="image">
                      </div>
                      <div class="container  d-flex justify-content-center">

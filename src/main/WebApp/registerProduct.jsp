@@ -13,13 +13,7 @@
     <div class="row py-lg-5">
       <div class="col-lg-6 col-md-8 mx-auto">
         <h1 class="fw-light">BIENVENIDO A LA ZONA DE PRODUCTOS</h1>
-        <p class="lead text-body-secondary">Por favor elige una de las siguientes opciones</p>
-        <p>
-          <a href="#" class="btn btn-primary my-2">Registrar un producto</a>
-          <a href="#" class="btn btn-primary my-2">Modificar un producto</a>
-          <a href="#" class="btn btn-primary my-2">Borrar un producto</a>
-          <a href="#" class="btn btn-primary my-2">Buscar un producto</a>
-        </p>
+
       </div>
     </div>
   </section>
@@ -39,11 +33,11 @@
         <input type="text" class="form-control" id="description" name="description">
       </div>
       <div class="mb-3">
-         <label for="format" class="form-label">DNI</label>
+         <label for="format" class="form-label">FORMATO</label>
          <input type="text" class="form-control" id="format" name="format">
       </div>
       <div class="mb-3">
-          <label for="price" class="form-label">PRECIO</label>
+          <label for="price" class="form-label">PRECIO (xx.xx)</label>
           <input type="text" class="form-control" id="price" name="price">
 
       <div style="margin-bottom: 20px;">

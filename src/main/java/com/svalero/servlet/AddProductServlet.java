@@ -57,7 +57,7 @@ public class AddProductServlet extends HttpServlet {
                 dao.addProduct(name, description, format, price, fileName);
                 return null;
             });
-            String url = "clientOk.jsp";
+            String url = "productOk.jsp";
             response.sendRedirect(url);
         } catch (ClassNotFoundException cnfe) {
             cnfe.printStackTrace();

@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="TiendaWebApp" />
+        <module name="TiendaWebApp-repo" />
       </profile>
     </annotationProcessing>
   </component>

@@ -31,5 +31,6 @@ public interface ProductDAO {
             "price = ? WHERE ID_PRODUCT= ?")
     void modifyProduct(String name_p, String description_p, int format_p, float price, int id_product);
 
-
+    @SqlUpdate("UPDATE products SET image= ? WHERE ID_PRODUCT= ?")
+    void modifyImageProduct(String image, int id_product);
 }

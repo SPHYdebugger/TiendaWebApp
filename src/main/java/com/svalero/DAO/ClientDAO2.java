@@ -34,6 +34,7 @@ public interface ClientDAO2 {
 
     @SqlUpdate("UPDATE clients SET image= ? WHERE ID_CLIENT= ?")
     void modifyImageClient(String image, int id_client);
+
     @SqlQuery("SELECT * FROM clients WHERE DNI=?")
     @UseRowMapper(ClientMapper.class)
     Client searchClientByDNI(String dni);
