@@ -1,0 +1,14 @@
+com\svalero\servlet\AddProductServlet.class
+com\svalero\servlet\DeleteClientServlet.class
+com\svalero\servlet\EditProductServlet.class
+com\svalero\servlet\AddBuyServlet.class
+com\svalero\servlet\EditClientImageServlet.class
+com\svalero\servlet\DeleteProductServlet.class
+com\svalero\servlet\EditClientServlet.class
+com\svalero\DAO\ProductMapper.class
+com\svalero\servlet\EditProductImageServlet.class
+com\svalero\servlet\SearchClientServlet.class
+com\svalero\DAO\ProductDAO.class
+com\svalero\servlet\DeleteBuyServlet.class
+com\svalero\servlet\AddClientServlet.class
+com\svalero\Domain\Product.class
