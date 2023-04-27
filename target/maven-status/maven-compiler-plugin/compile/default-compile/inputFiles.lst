@@ -1,6 +1,9 @@
 C:\Users\sanph\OneDrive\Escritorio\AA segunda evaluación ACABADAS\programacion\TiendaWebApp\src\main\java\com\svalero\Domain\Buy.java
 C:\Users\sanph\OneDrive\Escritorio\AA segunda evaluación ACABADAS\programacion\TiendaWebApp\src\main\java\com\svalero\servlet\DeleteClientServlet.java
+<<<<<<< HEAD
 C:\Users\sanph\OneDrive\Escritorio\AA segunda evaluación ACABADAS\programacion\TiendaWebApp\src\main\java\com\svalero\servlet\SearchClientServlet.java
+=======
+>>>>>>> 2b3e99bc3d9effd93a9632b89a122ebcaf05f8e6
 C:\Users\sanph\OneDrive\Escritorio\AA segunda evaluación ACABADAS\programacion\TiendaWebApp\src\main\java\com\svalero\Domain\Product.java
 C:\Users\sanph\OneDrive\Escritorio\AA segunda evaluación ACABADAS\programacion\TiendaWebApp\src\main\java\com\svalero\DAO\BuyMapper.java
 C:\Users\sanph\OneDrive\Escritorio\AA segunda evaluación ACABADAS\programacion\TiendaWebApp\src\main\java\com\svalero\servlet\AddProductServlet.java
@@ -8,11 +11,19 @@ C:\Users\sanph\OneDrive\Escritorio\AA segunda evaluación ACABADAS\programacion\T
 C:\Users\sanph\OneDrive\Escritorio\AA segunda evaluación ACABADAS\programacion\TiendaWebApp\src\main\java\com\svalero\servlet\AddClientServlet.java
 C:\Users\sanph\OneDrive\Escritorio\AA segunda evaluación ACABADAS\programacion\TiendaWebApp\src\main\java\com\svalero\servlet\DeleteProductServlet.java
 C:\Users\sanph\OneDrive\Escritorio\AA segunda evaluación ACABADAS\programacion\TiendaWebApp\src\main\java\com\svalero\DAO\ProductMapper.java
+<<<<<<< HEAD
+=======
+C:\Users\sanph\OneDrive\Escritorio\AA segunda evaluación ACABADAS\programacion\TiendaWebApp\src\main\java\com\svalero\DAO\ProductDAO2.java
+>>>>>>> 2b3e99bc3d9effd93a9632b89a122ebcaf05f8e6
 C:\Users\sanph\OneDrive\Escritorio\AA segunda evaluación ACABADAS\programacion\TiendaWebApp\src\main\java\com\svalero\DAO\Buy_DAO.java
 C:\Users\sanph\OneDrive\Escritorio\AA segunda evaluación ACABADAS\programacion\TiendaWebApp\src\main\java\com\svalero\DAO\Database.java
 C:\Users\sanph\OneDrive\Escritorio\AA segunda evaluación ACABADAS\programacion\TiendaWebApp\src\main\java\com\svalero\DAO\ProductDAO.java
 C:\Users\sanph\OneDrive\Escritorio\AA segunda evaluación ACABADAS\programacion\TiendaWebApp\src\main\java\com\svalero\servlet\DeleteBuyServlet.java
 C:\Users\sanph\OneDrive\Escritorio\AA segunda evaluación ACABADAS\programacion\TiendaWebApp\src\main\java\com\svalero\servlet\EditClientImageServlet.java
+<<<<<<< HEAD
+=======
+C:\Users\sanph\OneDrive\Escritorio\AA segunda evaluación ACABADAS\programacion\TiendaWebApp\src\main\java\com\svalero\DAO\ClientDAO.java
+>>>>>>> 2b3e99bc3d9effd93a9632b89a122ebcaf05f8e6
 C:\Users\sanph\OneDrive\Escritorio\AA segunda evaluación ACABADAS\programacion\TiendaWebApp\src\main\java\com\svalero\servlet\EditClientServlet.java
 C:\Users\sanph\OneDrive\Escritorio\AA segunda evaluación ACABADAS\programacion\TiendaWebApp\src\main\java\com\svalero\servlet\EditProductImageServlet.java
 C:\Users\sanph\OneDrive\Escritorio\AA segunda evaluación ACABADAS\programacion\TiendaWebApp\src\main\java\com\svalero\servlet\AddBuyServlet.java

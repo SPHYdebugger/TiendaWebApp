@@ -1,8 +1,11 @@
+<<<<<<< HEAD
 <%@page contentType="text/html"%>
 <%@page pageEncoding="UTF-8"%>
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
+=======
+>>>>>>> 2b3e99bc3d9effd93a9632b89a122ebcaf05f8e6
 <%@ page import="com.svalero.DAO.Database" %>
 <%@ page import="com.svalero.DAO.Buy_DAO" %>
 <%@ page import="com.svalero.Domain.Buy" %>
@@ -11,7 +14,11 @@
 <%@ page import="java.util.List" %>
 
 
+<<<<<<< HEAD
 <%@include file="includes/headerBuys.jsp"%>
+=======
+<%@include file="includes/header.jsp"%>
+>>>>>>> 2b3e99bc3d9effd93a9632b89a122ebcaf05f8e6
 <main>
 
   <section class="py-5 text-center container">

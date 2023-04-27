@@ -2,7 +2,10 @@ package com.svalero.DAO;
 
 import com.svalero.Domain.Client;
 import com.svalero.Domain.Client;
+<<<<<<< HEAD
 import org.jdbi.v3.sqlobject.customizer.Bind;
+=======
+>>>>>>> 2b3e99bc3d9effd93a9632b89a122ebcaf05f8e6
 import org.jdbi.v3.sqlobject.statement.SqlQuery;
 import org.jdbi.v3.sqlobject.statement.SqlUpdate;
 import org.jdbi.v3.sqlobject.statement.UseRowMapper;
@@ -48,8 +51,12 @@ public interface ClientDAO2 {
     @SqlUpdate("DELETE FROM clients WHERE id_client=?")
     void deleteClient(int id);
 
+<<<<<<< HEAD
     @SqlQuery("SELECT * FROM clients WHERE FIRSTNAME like ? or LASTNAME like ? or DNI like ?")
     @UseRowMapper(ClientMapper.class)
     List<Client> searchClientByFirstnameOrLastnameOrDni(@Bind("firstname") String firstname, @Bind("lastname") String lastname, @Bind("dni") String dni);
+=======
+
+>>>>>>> 2b3e99bc3d9effd93a9632b89a122ebcaf05f8e6
 
 }

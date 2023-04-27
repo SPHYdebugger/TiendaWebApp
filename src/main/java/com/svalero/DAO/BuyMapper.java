@@ -17,6 +17,7 @@ public class BuyMapper implements RowMapper<Buy> {
 
     @Override
     public Buy map(ResultSet rs, StatementContext ctx) throws SQLException {
+<<<<<<< HEAD
 
 
         Database.connect();
@@ -26,6 +27,12 @@ public class BuyMapper implements RowMapper<Buy> {
         Product product = Database.jdbi.withExtension(ProductDAO.class,
                 dao -> dao.searchProduct(rs.getInt("id_product")));
 
+=======
+        ClientDAO clientDAO = new ClientDAO(db);
+        ProductDAO2 productDAO2 = new ProductDAO2(db);
+        Client client = clientDAO.getClient(rs.getInt("id_Client"));
+        Product product = productDAO2.getProduct(rs.getInt("id_product"));
+>>>>>>> 2b3e99bc3d9effd93a9632b89a122ebcaf05f8e6
         return new Buy(rs.getInt("id_buy"),
                 client,
                 product,

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <%@page contentType="text/html"%>
 <%@page pageEncoding="UTF-8"%>
 
@@ -5,6 +6,9 @@
 
 <%@include file="includes/headerIndex.jsp"%>
 
+=======
+<%@include file="includes/header.jsp"%>
+>>>>>>> 2b3e99bc3d9effd93a9632b89a122ebcaf05f8e6
     <main role="main" >
 
       <div id="myCarousel" class="carousel slide" data-ride="carousel" >
@@ -56,6 +60,12 @@
       </div>
 
 
+<<<<<<< HEAD
+=======
+      <!-- Marketing messaging and featurettes
+      ================================================== -->
+      <!-- Wrap the rest of the page in another container to center all the content. -->
+>>>>>>> 2b3e99bc3d9effd93a9632b89a122ebcaf05f8e6
 
       <div class="container marketing">
 
@@ -82,6 +92,12 @@
         </div><!-- /.row -->
 
 
+<<<<<<< HEAD
+=======
+        <!-- START THE FEATURETTES -->
+
+
+>>>>>>> 2b3e99bc3d9effd93a9632b89a122ebcaf05f8e6
         <div class="row featurette" style="margin-top: 30px; margin-bottom: 30px;">
           <hr class="featurette-divider">
           <hr class="featurette-divider">
@@ -131,6 +147,11 @@
 
         <hr class="featurette-divider">
 
+<<<<<<< HEAD
+=======
+        <!-- /END THE FEATURETTES -->
+
+>>>>>>> 2b3e99bc3d9effd93a9632b89a122ebcaf05f8e6
       </div><!-- /.container -->
 
 

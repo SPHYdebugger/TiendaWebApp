@@ -1,29 +1,13 @@
-<<<<<<< HEAD
-<%@page contentType="text/html"%>
-<%@page pageEncoding="UTF-8"%>
-
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-=======
->>>>>>> 2b3e99bc3d9effd93a9632b89a122ebcaf05f8e6
 <!doctype html>
 <html lang="es">
   <head>
 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<<<<<<< HEAD
-    <meta name="Tienda WEB APP" content="">
-    <meta name="Santiago Perez" content="">
-    <link rel="icon" href="resources/flor.png">
-
-    <title>STETIC100 Tienda WEB </title>
-=======
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
 
     <title>Carousel Template for Bootstrap</title>
->>>>>>> 2b3e99bc3d9effd93a9632b89a122ebcaf05f8e6
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/carousel/">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -36,15 +20,10 @@
 
     <style>
     .card img{
-<<<<<<< HEAD
-      height: 250px;
-    }
-=======
 
       height: 250px;
     }
 
->>>>>>> 2b3e99bc3d9effd93a9632b89a122ebcaf05f8e6
     </style>
 
 
@@ -71,18 +50,10 @@
               <a class="nav-link" href="#" style="color: black;">CONTACTO</a>
             </li>
           </ul>
-<<<<<<< HEAD
-          <form action="searchClient" method="post" class="form-inline mt-2 mt-md-0">
-            <input class="form-control mr-sm-2" name="search" method="post" type="text" id="search" placeholder="Buscar un producto" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">BUSCAR</button>
-          </form>
-
-=======
           <form class="form-inline mt-2 mt-md-0">
             <input class="form-control mr-sm-2" type="text" placeholder="Buscar un producto" aria-label="Search">
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">BUSCAR</button>
           </form>
->>>>>>> 2b3e99bc3d9effd93a9632b89a122ebcaf05f8e6
         </div>
       </nav>
     </header>
