@@ -29,6 +29,11 @@ public class DeleteProductServlet extends HttpServlet {
             Class.forName("com.mysql.cj.jdbc.Driver");
             Database.connect();
 
+            Database.jdbi.withExtension(Buy_DAO.class, dao -> {
+                dao.deleteBuyByProduct(id);
+                return null;
+            });
+
             Database.jdbi.withExtension(ProductDAO.class, dao -> {
                 dao.deleteProduct(id);
                 return null;

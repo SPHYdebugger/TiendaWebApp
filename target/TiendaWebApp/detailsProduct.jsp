@@ -20,7 +20,7 @@
         <h1 class="fw-light">BIENVENIDO A LA ZONA DE PRODUCTOS</h1>
         <p class="lead text-body-secondary">Por favor elige una de las siguientes opciones</p>
         <p>
-          <a href="#" class="btn btn-primary my-2">Registrar un producto</a>
+          <a href="registerProduct.jsp" class="btn btn-primary my-2">Registrar un producto</a>
 
         </p>
       </div>

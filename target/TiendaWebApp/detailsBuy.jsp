@@ -11,7 +11,7 @@
 <%@ page import="java.util.List" %>
 
 
-<%@include file="includes/headerBuys.jsp"%>
+<%@include file="includes/headerIndex.jsp"%>
 <main>
 
   <section class="py-5 text-center container">

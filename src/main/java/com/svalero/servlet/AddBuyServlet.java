@@ -1,7 +1,11 @@
 package com.svalero.servlet;
 
 import com.svalero.DAO.Buy_DAO;
+import com.svalero.DAO.ClientDAO2;
 import com.svalero.DAO.Database;
+import com.svalero.DAO.ProductDAO;
+import com.svalero.Domain.Client;
+import com.svalero.Domain.Product;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.MultipartConfig;
 import jakarta.servlet.annotation.WebServlet;
@@ -32,12 +36,37 @@ public class AddBuyServlet extends HttpServlet {
 
             Class.forName("com.mysql.cj.jdbc.Driver");
             Database.connect();
-            Database.jdbi.withExtension(Buy_DAO.class, dao -> {
-                dao.addBuy(id_client, id_product, localDate);
-                return null;
-            });
-            String url = "buyOk.jsp";
-            response.sendRedirect(url);
+
+            Client client = Database.jdbi.withExtension(ClientDAO2.class,
+                    dao -> dao.searchClient(id_client));
+
+
+            Product product = Database.jdbi.withExtension(ProductDAO.class,
+                    dao -> dao.searchProduct(id_product));
+
+
+
+
+            if (client == null) {
+                out.println("<script type=\"text/javascript\">");
+                out.println("alert('EL CLIENTE NO EXISTE');");
+                out.println("location='registerBuy.jsp';");
+                out.println("</script>");
+
+            } else if (product == null) {
+                out.println("<script type=\"text/javascript\">");
+                out.println("alert('EL PRODUCTO NO EXISTE');");
+                out.println("location='registerBuy.jsp';");
+                out.println("</script>");
+
+            } else {
+                Database.jdbi.withExtension(Buy_DAO.class, dao -> {
+                    dao.addBuy(id_client, id_product, localDate);
+                    return null;
+                });
+                String url = "buyOk.jsp";
+                response.sendRedirect(url);
+            }
         } catch (ClassNotFoundException cnfe) {
             cnfe.printStackTrace();
         }

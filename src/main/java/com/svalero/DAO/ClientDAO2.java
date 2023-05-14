@@ -22,7 +22,8 @@ public interface ClientDAO2 {
     @SqlUpdate("INSERT INTO clients (firstname, lastname, DNI, address, city, email, password, telephone, image)" +
             " VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)")
     void addClient(String firstName, String lastName, String DNI, String address, String city,
-                   String email, String password, int telephone, String image);
+                   String email, String password, String
+                           telephone, String image);
 
     @SqlUpdate("DELETE FROM clients WHERE DNI = ?")
     void deleteClient(String dni);
@@ -31,7 +32,7 @@ public interface ClientDAO2 {
             "address = ?, city = ?, email = ?, password = ?, telephone = ? " +
             " WHERE ID_CLIENT= ?")
     void modifyClient(String firstName, String lastName, String DNI, String address, String city,
-                   String email, String password, int telephone, int id_client);
+                   String email, String password, String telephone, int id_client);
 
     @SqlUpdate("UPDATE clients SET image= ? WHERE ID_CLIENT= ?")
     void modifyImageClient(String image, int id_client);
@@ -51,5 +52,6 @@ public interface ClientDAO2 {
     @SqlQuery("SELECT * FROM clients WHERE FIRSTNAME like ? or LASTNAME like ? or DNI like ?")
     @UseRowMapper(ClientMapper.class)
     List<Client> searchClientByFirstnameOrLastnameOrDni(@Bind("firstname") String firstname, @Bind("lastname") String lastname, @Bind("dni") String dni);
+
 
 }

@@ -73,6 +73,7 @@
                 </div>
                 <div class="modal-body">
                   ¿Seguro que desea borrar el producto?
+                  Se borrarán las compras asociadas también
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>

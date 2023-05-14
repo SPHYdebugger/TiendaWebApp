@@ -33,5 +33,7 @@ public interface Buy_DAO {
     @UseRowMapper(BuyMapper.class)
     Buy searchBuy(int id_buy);
 
+    @SqlUpdate("DELETE FROM buys WHERE id_product = ?")
+    void deleteBuyByProduct(int id_product);
 
 }

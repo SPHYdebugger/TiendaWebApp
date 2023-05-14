@@ -5,13 +5,17 @@
 
 <%@ page import="com.svalero.DAO.Database" %>
 <%@ page import="com.svalero.DAO.Buy_DAO" %>
+<%@ page import="com.svalero.DAO.ClientDAO2" %>
+<%@ page import="com.svalero.DAO.ProductDAO" %>
 <%@ page import="com.svalero.Domain.Buy" %>
-
+<%@ page import="com.svalero.Domain.Client" %>
+<%@ page import="com.svalero.Domain.Product" %>
 
 <%@ page import="java.util.List" %>
 
 
-<%@include file="includes/headerBuys.jsp"%>
+
+<%@include file="includes/headerIndex.jsp"%>
 <main>
 
   <section class="py-5 text-center container">
@@ -20,7 +24,7 @@
         <h1 class="fw-light">BIENVENIDO A LA ZONA DE COMPRAS</h1>
         <p class="lead text-body-secondary">Por favor elige una de las siguientes opciones</p>
         <p>
-          <a href="registerClient.jsp" class="btn btn-primary my-2">Registrar una compra</a>
+          <a href="registerBuy.jsp" class="btn btn-primary my-2">Registrar una compra</a>
 
         </p>
       </div>
@@ -30,17 +34,40 @@
 
   <hr class="featurette-divider">
     <h2 style="text-align: center;">REGISTRAR UNA COMPRA</h2>
+ <%
 
+     Class.forName("com.mysql.cj.jdbc.Driver");
+     Database.connect();
+     List<Client> clientList = Database.jdbi.withExtension(ClientDAO2.class, ClientDAO2::getClients);
+     List<Product> productList = Database.jdbi.withExtension(ProductDAO.class, ProductDAO::getProducts);
+
+ %>
 
     <div class="container col-6">
     <form action="addBuy" method="post" enctype= "multipart/form-data">
       <div class="mb-3">
         <label for="id_client" class="form-label">ID CLIENTE</label>
-        <input type="text" class="form-control" id="id_client" name="id_client">
-      </div>
+
+        <select class="form-select" id="id_client" name="id_client"  required>
+
+           <% for (Client client : clientList)  { %>
+           <option value="<%= client.getId_client() %>"><%= client.getDni() %></option>
+           <% } %>
+
+        </select>
+        </div>
+
+
+
       <div class="mb-3">
-         <label for="id_product" class="form-label">ID PRODUCTO</label>
-         <input type="text" class="form-control" id="id_product" name="id_product">
+         <label for="id_product" class="form-label">NOMBRE PRODUCTO</label>
+         <select class="form-select" id="id_product" name="id_product"  required>
+
+            <% for (Product product : productList)  { %>
+            <option value="<%= product.getId_product() %>"><%= product.getName_p() %></option>
+            <% } %>
+
+         </select>
       </div>
       <div class="mb-3">
          <label for="date" class="form-label">FECHA DE COMPRA</label>

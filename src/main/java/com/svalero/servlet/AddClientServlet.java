@@ -44,7 +44,9 @@ public class AddClientServlet extends HttpServlet {
         String city = request.getParameter("city");
         String email = request.getParameter("email");
         String password = request.getParameter("password");
-        int telephone = Integer.parseInt(request.getParameter("telephone"));
+        String telephone = request.getParameter("telephone");
+
+
 
         try {
             Part imagePart = request.getPart("image");
@@ -74,4 +76,6 @@ public class AddClientServlet extends HttpServlet {
             cnfe.printStackTrace();
         }
     }
+
+
 }

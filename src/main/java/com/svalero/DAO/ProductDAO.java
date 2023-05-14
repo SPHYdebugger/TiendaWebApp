@@ -2,7 +2,9 @@ package com.svalero.DAO;
 
 import com.svalero.Domain.Buy;
 
+import com.svalero.Domain.Client;
 import com.svalero.Domain.Product;
+import org.jdbi.v3.sqlobject.customizer.Bind;
 import org.jdbi.v3.sqlobject.statement.SqlQuery;
 import org.jdbi.v3.sqlobject.statement.SqlUpdate;
 import org.jdbi.v3.sqlobject.statement.UseRowMapper;
@@ -33,4 +35,10 @@ public interface ProductDAO {
 
     @SqlUpdate("UPDATE products SET image= ? WHERE ID_PRODUCT= ?")
     void modifyImageProduct(String image, int id_product);
+
+    @SqlQuery("SELECT * FROM products WHERE NAME_P like ? or DESCRIPTION_P like ?")
+    @UseRowMapper(ProductMapper.class)
+    List<Product> searchProductByNameOrDescription(@Bind("name_p") String name_p, @Bind("description_p") String description_p);
+
+
 }
