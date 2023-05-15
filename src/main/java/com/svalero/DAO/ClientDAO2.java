@@ -15,7 +15,7 @@ public interface ClientDAO2 {
 
 
 
-    @SqlQuery("SELECT * FROM clients")
+    @SqlQuery("SELECT * FROM clients ORDER BY id_client DESC")
     @UseRowMapper(ClientMapper.class)
     List<Client> getClients();
 
