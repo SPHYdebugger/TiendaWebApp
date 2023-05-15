@@ -30,12 +30,13 @@
     </style>
 
 
+
   </head>
   <body>
 
     <header>
       <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="padding: 5px; background-color: #EAD0D1; height: 80px; ">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="index.jsp">
           <img src="resources/logo.png" alt="" style="width: 120px; height: 80px; margin: -8%;">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,9 +56,10 @@
           </ul>
           <form action="searchClient" method="post" class="form-inline mt-2 mt-md-0">
             <input class="form-control mr-sm-2" name="search" method="post" type="text" id="search" placeholder="Buscar un cliente" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">BUSCAR</button>
+            <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">BUSCAR</button>
           </form>
 
         </div>
       </nav>
     </header>
+   </body>

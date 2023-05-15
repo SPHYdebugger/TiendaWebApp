@@ -1,11 +1,8 @@
-<<<<<<< HEAD
 <%@page contentType="text/html"%>
 <%@page pageEncoding="UTF-8"%>
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-=======
->>>>>>> 2b3e99bc3d9effd93a9632b89a122ebcaf05f8e6
 <%@ page import="com.svalero.DAO.Database" %>
 
 <%@ page import="com.svalero.Domain.Product" %>
@@ -14,11 +11,7 @@
 <%@ page import="java.util.List" %>
 
 
-<<<<<<< HEAD
 <%@include file="includes/headerProducts.jsp"%>
-=======
-<%@include file="includes/header.jsp"%>
->>>>>>> 2b3e99bc3d9effd93a9632b89a122ebcaf05f8e6
 <main>
 
   <section class="py-5 text-center container">
@@ -27,7 +20,7 @@
         <h1 class="fw-light">BIENVENIDO A LA ZONA DE PRODUCTOS</h1>
         <p class="lead text-body-secondary">Por favor elige una de las siguientes opciones</p>
         <p>
-          <a href="#" class="btn btn-primary my-2">Registrar un producto</a>
+          <a href="registerProduct.jsp" class="btn btn-primary my-2">Registrar un producto</a>
 
         </p>
       </div>

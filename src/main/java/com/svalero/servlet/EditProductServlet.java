@@ -24,7 +24,7 @@ public class EditProductServlet extends HttpServlet {
         String imagePath = "/Users/sanph/OneDrive/Escritorio/PROGRAMACION/apache-tomcat-10.1.7/webapps/Tienda_data";
 
         int id = Integer.parseInt(request.getParameter("id"));
-        String name = request.getParameter("name");
+        String name = request.getParameter("name_p");
         String description = request.getParameter("description");
         int format = Integer.parseInt(request.getParameter("format"));
         float price = Float.parseFloat(request.getParameter("price"));
@@ -39,7 +39,7 @@ public class EditProductServlet extends HttpServlet {
                 dao.modifyProduct(name, description, format, price, id);
                 return null;
             });
-            String url = "clientOk.jsp";
+            String url = "productOk.jsp";
             response.sendRedirect(url);
         } catch (ClassNotFoundException cnfe) {
             cnfe.printStackTrace();

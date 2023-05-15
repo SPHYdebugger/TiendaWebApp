@@ -3,7 +3,7 @@
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-<%@include file="includes/headerBuys.jsp"%>
+<%@include file="includes/headerIndex.jsp"%>
 <main>
     <meta charset="utf-8">
   <section class="py-5 text-center container">

@@ -11,7 +11,7 @@
 <%@ page import="java.util.List" %>
 
 
-<%@include file="includes/headerBuys.jsp"%>
+<%@include file="includes/headerIndex.jsp"%>
 <main>
 
   <section class="py-5 text-center container">
@@ -72,7 +72,7 @@
                                 </div>
                               </div>
                             </div>
-                          </div>
+                  </div>
                   <a href="detailsBuy.jsp?id=<%= buy.getId_buy()%>" class="btn btn-sm btn-outline-secondary">VER DETALLES</a>
                 </div>
                 <small class="text-body-secondary"> </small>

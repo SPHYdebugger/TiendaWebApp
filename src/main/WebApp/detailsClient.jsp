@@ -13,6 +13,12 @@
 
 <%@include file="includes/headerClients.jsp"%>
 
+<style>
+li {
+min-height: 42px;
+}
+</style>
+
 <main>
 
   <section class="py-5 text-center container">

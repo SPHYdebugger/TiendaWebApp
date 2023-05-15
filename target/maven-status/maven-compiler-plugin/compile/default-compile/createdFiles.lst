@@ -1,19 +1,23 @@
+com\svalero\DAO\ClientDAO2.class
+com\svalero\servlet\EditProductImageServlet.class
+com\svalero\DAO\ProductDAO.class
+com\svalero\servlet\DeleteBuyServlet.class
+com\svalero\servlet\EditClientImageServlet.class
+com\svalero\servlet\DeleteProductServlet.class
 com\svalero\servlet\AddProductServlet.class
 com\svalero\servlet\DeleteClientServlet.class
 com\svalero\servlet\EditProductServlet.class
-com\svalero\servlet\AddBuyServlet.class
-com\svalero\servlet\EditClientImageServlet.class
-com\svalero\servlet\DeleteProductServlet.class
-com\svalero\servlet\EditClientServlet.class
-com\svalero\DAO\ProductMapper.class
-<<<<<<< HEAD
-com\svalero\servlet\EditProductImageServlet.class
 com\svalero\servlet\SearchClientServlet.class
-=======
-com\svalero\DAO\ProductDAO2.class
-com\svalero\servlet\EditProductImageServlet.class
->>>>>>> 2b3e99bc3d9effd93a9632b89a122ebcaf05f8e6
-com\svalero\DAO\ProductDAO.class
-com\svalero\servlet\DeleteBuyServlet.class
+com\svalero\DAO\Database.class
+com\svalero\DAO\ClientMapper.class
+com\svalero\Domain\Buy.class
+com\svalero\Domain\Client.class
+com\svalero\DAO\BuyMapper.class
+com\svalero\servlet\AddBuyServlet.class
+com\svalero\servlet\EditClientServlet.class
+com\svalero\util\Constants.class
+com\svalero\servlet\SearchProductServlet.class
+com\svalero\DAO\Buy_DAO.class
+com\svalero\DAO\ProductMapper.class
 com\svalero\servlet\AddClientServlet.class
 com\svalero\Domain\Product.class

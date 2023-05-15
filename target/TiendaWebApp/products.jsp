@@ -1,11 +1,8 @@
-<<<<<<< HEAD
 <%@page contentType="text/html"%>
 <%@page pageEncoding="UTF-8"%>
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-=======
->>>>>>> 2b3e99bc3d9effd93a9632b89a122ebcaf05f8e6
 <%@ page import="com.svalero.DAO.Database" %>
 
 <%@ page import="com.svalero.Domain.Product" %>
@@ -14,11 +11,7 @@
 <%@ page import="java.util.List" %>
 
 
-<<<<<<< HEAD
 <%@include file="includes/headerProducts.jsp"%>
-=======
-<%@include file="includes/header.jsp"%>
->>>>>>> 2b3e99bc3d9effd93a9632b89a122ebcaf05f8e6
 <main>
 
   <section class="py-5 text-center container">
@@ -80,6 +73,7 @@
                 </div>
                 <div class="modal-body">
                   ¿Seguro que desea borrar el producto?
+                  Se borrarán las compras asociadas también
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>

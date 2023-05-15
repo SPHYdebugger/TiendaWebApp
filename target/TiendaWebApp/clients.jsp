@@ -1,11 +1,8 @@
-<<<<<<< HEAD
 <%@page contentType="text/html"%>
 <%@page pageEncoding="UTF-8"%>
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-=======
->>>>>>> 2b3e99bc3d9effd93a9632b89a122ebcaf05f8e6
 <%@ page import="com.svalero.DAO.Database" %>
 <%@ page import="com.svalero.DAO.ClientDAO2" %>
 <%@ page import="com.svalero.Domain.Client" %>
@@ -14,11 +11,7 @@
 <%@ page import="java.util.List" %>
 
 
-<<<<<<< HEAD
 <%@include file="includes/headerClients.jsp"%>
-=======
-<%@include file="includes/header.jsp"%>
->>>>>>> 2b3e99bc3d9effd93a9632b89a122ebcaf05f8e6
 <main>
 
   <section class="py-5 text-center container">
@@ -40,7 +33,7 @@
   <div class="album py-5 bg-body-tertiary">
     <div class="container">
 
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" style="justify-content: center;">
+     <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 g-4" style="justify-content: center;">
 
                 <%
                   Class.forName("com.mysql.cj.jdbc.Driver");
@@ -52,18 +45,19 @@
                 %>
 
         <div class="col">
-          <div class="card shadow-lg">
+          <div class="card shadow-md">
             <img src="../Tienda_data/<%= client.getImage() %>" alt="" style="">
             <div class="card-body">
-              <b class="card-text"><%= client.getFirstName() %></b>
+              <h5 class="card-title fw-bold"><%= client.getFirstName() %></h5>
               <p class="card-text"><%= client.getLastName() %></p>
+              <p class="text-body-secondary">DNI <%= client.getDni() %> </p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
                   <a href="editClient.jsp?id=<%= client.getId_client()%>&firstName=<%= client.getFirstName()%>&lastName=<%= client.getLastName()%>&dni=<%= client.getDni()%>&address=<%= client.getAddress()%>&city=<%= client.getCity()%>&email=<%= client.getEmail()%>&password=<%= client.getPassword()%>&telephone=<%= client.getTelephone()%>&image=<%= client.getImage()%>" class="btn btn-sm btn-outline-secondary">EDITAR</a>
                   <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal<%= idc%>">BORRAR</button>
                   <a href="detailsClient.jsp?id=<%= client.getId_client()%>" class="btn btn-sm btn-outline-secondary">VER DETALLES</a>
                 </div>
-                <small class="text-body-secondary"><%= client.getDni() %> </small>
+
               </div>
             </div>
 
