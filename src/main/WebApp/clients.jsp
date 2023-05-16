@@ -11,18 +11,18 @@
 <%@ page import="java.util.List" %>
 
 
-<%@include file="includes/headerClients.jsp"%>
+<%@include file="includes/headerIndex.jsp"%>
 <main>
 
   <section class="py-5 text-center container">
     <div class="row py-lg-5">
       <div class="col-lg-6 col-md-8 mx-auto">
         <h1 class="fw-light">BIENVENIDO A LA ZONA DE CLIENTES</h1>
-        <p class="lead text-body-secondary">Aqui puedes ver todos los datos de los clientes existentes o registrar uno nuevo</p>
-        <p>
-          <a href="registerClient.jsp" class="btn btn-primary my-2">Registrar un cliente</a>
-
-        </p>
+        <p class="lead text-body-secondary">Aqui puedes ver todos los datos de los clientes existentes</p>
+        <form action="searchClient" method="post" class="form-inline mx-auto" style="justify-content: center;">
+          <input class="form-control mr-sm-2" name="search" method="post" type="text" id="search" placeholder="Buscar un cliente" aria-label="Search">
+          <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">BUSCAR</button>
+        </form>
       </div>
     </div>
   </section>

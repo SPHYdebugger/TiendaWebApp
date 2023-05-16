@@ -29,6 +29,7 @@ public class EditProductServlet extends HttpServlet {
         int format = Integer.parseInt(request.getParameter("format"));
         float price = Float.parseFloat(request.getParameter("price"));
 
+        String userName = request.getParameter("user_name");
 
 
         try {
@@ -39,8 +40,8 @@ public class EditProductServlet extends HttpServlet {
                 dao.modifyProduct(name, description, format, price, id);
                 return null;
             });
-            String url = "productOk.jsp";
-            response.sendRedirect(url);
+            response.sendRedirect("productsUser.jsp?user_name=" + userName);
+
         } catch (ClassNotFoundException cnfe) {
             cnfe.printStackTrace();
         }

@@ -11,21 +11,9 @@
 <%@ page import="java.util.List" %>
 
 
-<%@include file="includes/headerProducts.jsp"%>
+<%@include file="includes/headerUser.jsp"%>
 <main>
 
-  <section class="py-5 text-center container">
-    <div class="row py-lg-5">
-      <div class="col-lg-6 col-md-8 mx-auto">
-        <h1 class="fw-light">BIENVENIDO A LA ZONA DE PRODUCTOS</h1>
-        <p class="lead text-body-secondary">Por favor elige una de las siguientes opciones</p>
-        <p>
-          <a href="registerProduct.jsp" class="btn btn-primary my-2">Registrar un producto</a>
-
-        </p>
-      </div>
-    </div>
-  </section>
 
   <hr class="featurette-divider">
     <h2 style="text-align: center;">MODIFICAR EL PRODUCTO</h2>
@@ -50,7 +38,7 @@
                     Elija la nueva imagen
                      <form action="editImageProduct" method="post" enctype= "multipart/form-data">
                      <div style="margin-bottom: 20px;">
-
+                                <input type="hidden" name="user_name" value="<%= request.getParameter("user_name") %>">
                                  <input type="text" class="form-control" id="id" name="id" value='<%= request.getParameter("id") %>' hidden>
                                  <input type="file" class="form-control" id="image" name="image">
                      </div>
@@ -93,6 +81,8 @@
           <label for="price" class="form-label">PRECIO euros</label>
           <input type="text" class="form-control" id="price" name="price" value='<%= request.getParameter("price") %>'>
       </div>
+      <input type="hidden" name="user_name" value="<%= request.getParameter("user_name") %>">
+
 
 
 
@@ -103,7 +93,7 @@
     </form>
 
         <div class="container  d-flex justify-content-center">
-        <a href="products.jsp" type="button" class="btn btn-primary col-4" style="margin-top: 20px;">Volver a la lista de productos</a>
+        <a href="productsUser.jsp?user_name=<%= request.getParameter("user_name") %>" type="button" class="btn btn-primary col-4" style="margin-top: 20px;">Volver a la lista de productos</a>
         </div>
     </div>
 </main>

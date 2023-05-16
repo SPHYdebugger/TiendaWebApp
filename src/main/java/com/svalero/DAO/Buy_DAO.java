@@ -13,7 +13,7 @@ public interface Buy_DAO {
 
     @SqlQuery("SELECT * FROM buys")
     @UseRowMapper(BuyMapper.class)
-    List<Buy> getBuy();
+    List<Buy> getBuys();
 
     @SqlUpdate("INSERT INTO buys (id_client, id_product, buy_date) VALUES (?, ?, ?)")
     void addBuy(int id_client, int id_product, LocalDate date);

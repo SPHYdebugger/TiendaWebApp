@@ -11,7 +11,63 @@
 <%@ page import="java.util.List" %>
 
 
-<%@include file="includes/headerProducts.jsp"%>
+
+<!doctype html>
+<html lang="es">
+  <head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="Tienda WEB APP" content="">
+    <meta name="Santiago Perez" content="">
+    <link rel="icon" href="resources/flor.png">
+
+    <title>STETIC100 Tienda WEB </title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/carousel/">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+
+    <style>
+    .card img{
+      height: 250px;
+    }
+    </style>
+
+
+  </head>
+ <body>
+
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="padding: 5px; background-color: #EAD0D1; height: 80px; ">
+        <a class="navbar-brand" href="index.jsp">
+          <img src="resources/logo.png" alt="" style="width: 120px; height: 80px; margin: -8%;">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto" >
+            <li class="nav-item active">
+              <a class="nav-link" href="indexUser.jsp?user_name=<%= request.getParameter("user_name") %>" style="color: black;">INICIO <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="color: black;">EVENTOS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="color: black;">CONTACTO</a>
+            </li>
+          </ul>
+          <h2><%= request.getParameter("user_name") %></h2>
+          <a href="index.jsp" type="button" class="btn btn-sm btn-outline-primary" style="margin-left: 10;" >CERRAR SESIÓN</a>
+
+        </div>
+      </nav>
+    </header>
 <main>
 
   <section class="py-5 text-center container">
@@ -20,9 +76,13 @@
         <h1 class="fw-light">BIENVENIDO A LA ZONA DE PRODUCTOS</h1>
         <p class="lead text-body-secondary">Por favor elige una de las siguientes opciones</p>
         <p>
-          <a href="registerProduct.jsp" class="btn btn-primary my-2">Registrar un producto</a>
-
+          <a href="registerProduct.jsp?user_name=<%= request.getParameter("user_name") %>" class="btn btn-primary my-2">Registrar un producto</a>
         </p>
+        <form action="searchProductUser" method="post" class="form-inline mx-auto" style="justify-content: center;">
+          <input class="form-control mr-sm-2" name="search" method="post" type="text" id="search" placeholder="Buscar un producto" aria-label="Search">
+          <input type="hidden" name="user_name" value="<%= request.getParameter("user_name") %>">
+          <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">BUSCAR</button>
+        </form>
       </div>
     </div>
   </section>
@@ -54,9 +114,9 @@
                 <p class="card-text"><%= product.getFormat_p() %> ml.</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <a href="editProduct.jsp?id=<%= product.getId_product()%>&name_p=<%= product.getName_p()%>&description=<%= product.getDescription_p()%>&format=<%= product.getFormat_p()%>&price=<%= product.getPrice()%>&&image=<%= product.getImage()%>" class="btn btn-sm btn-outline-secondary">EDITAR</a>
+                    <a href="editProduct.jsp?id=<%= product.getId_product()%>&name_p=<%= product.getName_p()%>&description=<%= product.getDescription_p()%>&format=<%= product.getFormat_p()%>&price=<%= product.getPrice()%>&image=<%= product.getImage()%>&user_name=<%= request.getParameter("user_name") %>" class="btn btn-sm btn-outline-secondary">EDITAR</a>
                     <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal<%= idc%>">BORRAR</button>
-                    <a href="detailsProduct.jsp?id=<%= product.getId_product()%>" class="btn btn-sm btn-outline-secondary">VER DETALLES</a>
+                    <a href="detailsProductUser.jsp?id=<%= product.getId_product()%>&user_name=<%= request.getParameter("user_name") %>" class="btn btn-sm btn-outline-secondary">VER DETALLES</a>
                   </div>
                   <small class="text-body-secondary"><%= product.getPrice() %> Euros </small>
                 </div>
@@ -77,7 +137,7 @@
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                  <a href="deleteProduct?id=<%= product.getId_product()%>" type="button" class="btn btn-primary" >Aceptar</a>
+                  <a href="deleteProduct?id=<%= product.getId_product()%>&user_name=<%= request.getParameter("user_name") %>" type="button" class="btn btn-primary" >Aceptar</a>
                 </div>
               </div>
             </div>

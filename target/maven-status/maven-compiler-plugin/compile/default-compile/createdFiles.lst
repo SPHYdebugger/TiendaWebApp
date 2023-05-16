@@ -9,6 +9,7 @@ com\svalero\DAO\Database.class
 com\svalero\Domain\Buy.class
 com\svalero\DAO\BuyMapper.class
 com\svalero\servlet\AddBuyServlet.class
+com\svalero\servlet\SearchClientServletUser.class
 com\svalero\servlet\LogInServlet.class
 com\svalero\util\Constants.class
 com\svalero\DAO\ProductDAO.class
@@ -18,6 +19,7 @@ com\svalero\servlet\DeleteProductServlet.class
 com\svalero\DAO\ClientMapper.class
 com\svalero\Domain\Client.class
 com\svalero\servlet\EditClientServlet.class
+com\svalero\servlet\SearchProductServletUser.class
 com\svalero\servlet\SearchProductServlet.class
 com\svalero\DAO\Buy_DAO.class
 com\svalero\DAO\ProductMapper.class

@@ -11,18 +11,18 @@
 <%@ page import="java.util.List" %>
 
 
-<%@include file="includes/headerProducts.jsp"%>
+<%@include file="includes/headerIndex.jsp"%>
 <main>
 
   <section class="py-5 text-center container">
     <div class="row py-lg-5">
       <div class="col-lg-6 col-md-8 mx-auto">
         <h1 class="fw-light">BIENVENIDO A LA ZONA DE PRODUCTOS</h1>
-        <p class="lead text-body-secondary">Por favor elige una de las siguientes opciones</p>
-        <p>
-          <a href="registerProduct.jsp" class="btn btn-primary my-2">Registrar un producto</a>
-
-        </p>
+        <p class="lead text-body-secondary">Aqui puedes ver los productos disponibles</p>
+        <form action="searchProduct" method="post" class="form-inline mx-auto" style="justify-content: center;">
+          <input class="form-control mr-sm-2" name="search" method="post" type="text" id="search" placeholder="Buscar un producto" aria-label="Search">
+          <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">BUSCAR</button>
+        </form>
       </div>
     </div>
   </section>

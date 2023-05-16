@@ -11,7 +11,7 @@
 <%@ page import="java.util.List" %>
 
 
-<%@include file="includes/headerProducts.jsp"%>
+<%@include file="includes/headerUser.jsp"%>
 <main>
 
   <section class="py-5 text-center container">
@@ -44,6 +44,8 @@
       <div class="mb-3">
           <label for="price" class="form-label">PRECIO (xx.xx)</label>
           <input type="text" class="form-control" id="price" name="price">
+      </div>
+      <input type="hidden" name="user_name" value="<%= request.getParameter("user_name") %>">
 
       <div style="margin-bottom: 20px;">
             <label for="image" class="form-label">Imagen</label>
@@ -55,7 +57,7 @@
     </form>
 
         <div class="container  d-flex justify-content-center">
-        <a href="products.jsp" type="button" class="btn btn-primary col-4" style="margin-top: 20px;">Volver a la lista de clientes</a>
+        <a href="productsUser.jsp?user_name=<%= request.getParameter("user_name") %>" type="button" class="btn btn-primary col-4" style="margin-top: 20px;">Volver a la lista de productos</a>
         </div>
     </div>
 </main>

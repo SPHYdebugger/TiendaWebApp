@@ -3,7 +3,7 @@
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-<%@include file="includes/headerProducts.jsp"%>
+<%@include file="includes/headerUser.jsp"%>
 <main>
     <meta charset="utf-8">
   <section class="py-5 text-center container">
@@ -13,7 +13,7 @@
 
     <h2 style="text-align: center; color: green;">PRODUCTO REGISTRADO CORRECTAMENTE</h2>
     <div class="container  d-flex justify-content-center">
-             <a href="products.jsp" type="button" class="btn btn-primary col-4" style="margin-top: 20px;">Volver a la lista de productos</a>
+             <a href="productsUser.jsp?user_name=<%= request.getParameter("user_name") %>" type="button" class="btn btn-primary col-4" style="margin-top: 20px;">Volver a la lista de productos</a>
              </div>
   </section>
 

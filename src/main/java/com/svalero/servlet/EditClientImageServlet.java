@@ -27,6 +27,7 @@ public class EditClientImageServlet extends HttpServlet {
         response.setContentType("text/html");
         PrintWriter out = response.getWriter();
         String imagePath = "/Users/sanph/OneDrive/Escritorio/PROGRAMACION/apache-tomcat-10.1.7/webapps/Tienda_data";
+        String userName = request.getParameter("user_name");
 
 
         try {
@@ -49,8 +50,8 @@ public class EditClientImageServlet extends HttpServlet {
                 return null;
             });
 
-            String url = "clients.jsp";
-            response.sendRedirect(url);
+            response.sendRedirect("clientsUser.jsp?user_name=" + userName);
+
 
         } catch (ClassNotFoundException cnfe) {
             cnfe.printStackTrace();

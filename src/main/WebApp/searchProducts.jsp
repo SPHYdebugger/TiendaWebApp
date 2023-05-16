@@ -36,7 +36,7 @@
             </tr>
         <% } %>
         <div class="container  d-flex justify-content-center">
-                <a href="clients.jsp" type="button" class="btn btn-primary col-4" style="margin-top: 30px; margin-bottom: 30px;">Volver a la lista de clientes</a>
+                <a href="products.jsp" type="button" class="btn btn-primary col-4" style="margin-top: 30px; margin-bottom: 30px;">Volver a la lista de productos</a>
         </div>
 
 </body>

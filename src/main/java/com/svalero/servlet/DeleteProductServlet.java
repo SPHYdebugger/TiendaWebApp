@@ -22,6 +22,8 @@ public class DeleteProductServlet extends HttpServlet {
         response.setContentType("text/html");
 
         int id = Integer.parseInt(request.getParameter("id"));
+        String userName = request.getParameter("user_name");
+
 
 
         try {
@@ -39,8 +41,8 @@ public class DeleteProductServlet extends HttpServlet {
                 return null;
             });
 
-            String url = "products.jsp";
-            response.sendRedirect(url);
+            response.sendRedirect("productsUser.jsp?user_name=" + userName);
+
         } catch (ClassNotFoundException cnfe) {
             cnfe.printStackTrace();
         }

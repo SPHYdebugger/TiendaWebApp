@@ -64,19 +64,19 @@
           <div class="col-lg-4">
             <img class="rounded-circle" src="resources/cliente.png" alt="Generic placeholder image" width="140" height="140">
             <h2>CLIENTES</h2>
-            <p>Entra si lo que quieres es registrar un cliente nuevo, editar o borrar uno existente, listarlos a todos o buscar uno</p>
+            <p>Entra para listar los clientes o buscar uno</p>
             <p><a class="btn btn-secondary" href="clients.jsp" role="button">ENTRAR &raquo;</a></p>
           </div><!-- /.col-lg-4 -->
           <div class="col-lg-4">
             <img class="rounded-circle" src="resources/productos.png" alt="Generic placeholder image" width="140" height="140">
             <h2>PRODUCTOS</h2>
-            <p>Entra si lo que quieres es registrar un producto nuevo, editar o borrar uno existente, listarlos a todos o buscar uno</p>
+            <p>Entra para listar los productos o buscar uno</p>
             <p><a class="btn btn-secondary" href="products.jsp" role="button">ENTRAR &raquo;</a></p>
           </div><!-- /.col-lg-4 -->
           <div class="col-lg-4">
             <img class="rounded-circle" src="resources/compras.png" alt="Generic placeholder image" width="140" height="140">
             <h2>COMPRAS</h2>
-            <p>Entra si lo que quieres es registrar una compra nueva, editar o borrar una existente, listarlas a todas o buscar una</p>
+            <p>Entra para ver las compras realizadas</p>
             <p><a class="btn btn-secondary" href="buys.jsp" role="button">ENTRAR &raquo;</a></p>
           </div><!-- /.col-lg-4 -->
         </div><!-- /.row -->

@@ -14,22 +14,9 @@
 <%@include file="includes/headerIndex.jsp"%>
 <main>
 
-  <section class="py-5 text-center container">
-    <div class="row py-lg-5">
-      <div class="col-lg-6 col-md-8 mx-auto">
-        <h1 class="fw-light">BIENVENIDO A LA ZONA DE COMPRAS</h1>
-        <p class="lead text-body-secondary">Por favor elige una de las siguientes opciones</p>
-        <p>
-          <a href="registerBuy.jsp" class="btn btn-primary my-2">Registrar una compra</a>
-
-        </p>
-      </div>
-    </div>
-  </section>
 
 
-  <hr class="featurette-divider">
-    <h2 style="text-align: center;">DETALLE DE LA COMPRA</h2>
+
 <%
 
     int buyId = Integer.parseInt(request.getParameter("id"));
@@ -40,8 +27,9 @@
 
 
 
-    <div class="container">
+    <div class="container" style="margin-top: 100px;">
         <div class="row  d-flex justify-content-center">
+        <h2 style="text-align: center;">DETALLE DE LA COMPRA</h2>
 
         <ul class="list-group col-4">
             <li class="list-group-item font-weight-bold">ID DE COMPRA</li>
