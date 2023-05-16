@@ -69,28 +69,25 @@
     </header>
 <main>
 
-  <section class="py-5 text-center container">
-    <div class="row py-lg-5">
-      <div class="col-lg-6 col-md-8 mx-auto">
-        <h1 class="fw-light">BIENVENIDO A LA ZONA DE COMPRAS</h1>
-        <p class="lead text-body-secondary">Por favor elige una de las siguientes opciones</p>
-        <a href="registerBuy.jsp?user_name=<%= request.getParameter("user_name") %>" class="btn btn-primary my-2">Registrar una compra</a>
-                  <form action="searchProductUser" method="post" class="form-inline mx-auto" style="justify-content: center;">
-                       <input type="hidden" name="user_name" value="<%= request.getParameter("user_name") %>">
+    <section class="py-5 text-center container">
+        <div class="row py-lg-5">
+          <div class="col-lg-6 col-md-8 mx-auto">
+            <h1 class="fw-light">BIENVENIDO A LA ZONA DE COMPRAS</h1>
+            <p class="lead text-body-secondary">Aqui puedes ver todos los datos de las compras existentes o registrar una nueva</p>
+            <p>
+              <a href="registerBuy.jsp?user_name=<%= request.getParameter("user_name") %>" class="btn btn-primary my-2">Registrar una compra</a>
 
-                      <input class="form-control mr-sm-2" name="search" method="post" type="text" id="search" placeholder="Buscar un cliente" aria-label="Search">
-                      <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">BUSCAR</button>
-                    </form>
-      </div>
-    </div>
-  </section>
 
-  <hr class="featurette-divider">
-    <h2 style="text-align: center;">LISTA DE COMPRAS</h2>
+            </p>
+          </div>
+        </div>
+      </section>
+
+
 
   <div class="album py-5 bg-body-tertiary">
     <div class="container">
-
+        <h2 style="text-align: center;">LISTA DE COMPRAS</h2>
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" style="justify-content: center;">
 
                 <%
@@ -126,12 +123,12 @@
                                 </div>
                                 <div class="modal-footer">
                                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                                  <a href="deleteBuy?id=<%= idc %>" type="button" class="btn btn-primary" >Aceptar</a>
+                                  <a href="deleteBuy?id=<%= idc %>&user_name=<%= request.getParameter("user_name") %>" type="button" class="btn btn-primary" >Aceptar</a>
                                 </div>
                               </div>
                             </div>
                   </div>
-                  <a href="detailsBuy.jsp?id=<%= buy.getId_buy()%>" class="btn btn-sm btn-outline-secondary">VER DETALLES</a>
+                  <a href="detailsBuyUser.jsp?id=<%= buy.getId_buy()%>&user_name=<%= request.getParameter("user_name") %>" class="btn btn-sm btn-outline-secondary">VER DETALLES</a>
                 </div>
                 <small class="text-body-secondary"> </small>
               </div>

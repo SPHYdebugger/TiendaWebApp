@@ -1,7 +1,7 @@
 <%@ page import="java.util.List" %>
 <%@ page import="com.svalero.Domain.Client" %>
 
-<%@ include file="includes/headerUser.jsp" %>
+<%@ include file="includes/headerIndex.jsp" %>
 <main>
 <br>
 

@@ -31,6 +31,8 @@ public class AddBuyServlet extends HttpServlet {
         int id_product = Integer.parseInt(request.getParameter("id_product"));
         String date = request.getParameter("date");
         LocalDate localDate = LocalDate.parse(date);
+        String userName = request.getParameter("user_name");
+
 
         try {
 
@@ -64,8 +66,8 @@ public class AddBuyServlet extends HttpServlet {
                     dao.addBuy(id_client, id_product, localDate);
                     return null;
                 });
-                String url = "buyOk.jsp";
-                response.sendRedirect(url);
+                response.sendRedirect("buyOk.jsp?user_name=" + userName);
+
             }
         } catch (ClassNotFoundException cnfe) {
             cnfe.printStackTrace();
