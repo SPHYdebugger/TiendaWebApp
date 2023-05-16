@@ -10,20 +10,20 @@
 
 <%@ page import="java.util.List" %>
 
-
 <%@include file="includes/headerIndex.jsp"%>
+
 <main>
 
 
 
 
-<%
+    <%
 
-    int buyId = Integer.parseInt(request.getParameter("id"));
-        Class.forName("com.mysql.cj.jdbc.Driver");
-        Database.connect();
-        Buy buy = Database.jdbi.withExtension(Buy_DAO.class, dao -> dao.searchBuy(buyId));
-%>
+        int buyId = Integer.parseInt(request.getParameter("id"));
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            Database.connect();
+            Buy buy = Database.jdbi.withExtension(Buy_DAO.class, dao -> dao.searchBuy(buyId));
+    %>
 
 
 
@@ -54,17 +54,15 @@
               <li class="list-group-item"><%= buy.getProduct().getName_p() %></li>
               <li class="list-group-item"><%= buy.getProduct().getPrice() %></li>
 
-
-
         </ul>
 
 
-        </div>
-
-        <div class="container  d-flex justify-content-center">
-        <a href="buys.jsp" type="button" class="btn btn-primary col-4" style="margin-top: 10px;">Volver a la lista de compras</a>
-        </div>
     </div>
+
+    <div class="container  d-flex justify-content-center">
+        <a href="buys.jsp" type="button" class="btn btn-primary col-4" style="margin-top: 10px;">Volver a la lista de compras</a>
+    </div>
+
 </main>
 
 <%@include file= "includes/footer.jsp" %>

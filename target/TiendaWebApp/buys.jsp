@@ -14,10 +14,6 @@
 <%@include file="includes/headerIndex.jsp"%>
 <main>
 
-
-
-
-
   <div class="album py-5 bg-body-tertiary">
     <div class="container" style="margin-top: 50px">
         <h2 style="text-align: center;">LISTA DE COMPRAS</h2>
@@ -43,7 +39,7 @@
             <td><%= buy.getProduct().getName_p() %></td>
             <td><%= buy.getBuyDate() %></td>
             <td>
-          <a href="detailsBuy.jsp?id=<%= buy.getId_buy()%>" class="btn btn-sm btn-outline-secondary">DETAILS</a>
+          <a href="detailsBuy.jsp?id=<%= buy.getId_buy()%>" class="btn btn-sm btn-outline-secondary">DETALLES</a>
 
 
             </td>

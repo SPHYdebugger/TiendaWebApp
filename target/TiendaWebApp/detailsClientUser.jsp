@@ -53,12 +53,6 @@
     <!-- Custom styles for this template -->
     <link href="carousel.css" rel="stylesheet">
 
-    <style>
-    .card img{
-      height: 250px;
-    }
-    </style>
-
 
   </head>
  <body>
@@ -94,30 +88,19 @@
 
 <main>
 
-  <section class="py-5 text-center container">
-    <div class="row py-lg-5">
-      <div class="col-lg-6 col-md-8 mx-auto">
-        <h1 class="fw-light">BIENVENIDO A LA ZONA DE CLIENTES</h1>
-        <p class="lead text-body-secondary">Por favor elige una de las siguientes opciones</p>
-        <p>
-          <a href="registerClient.jsp?user_name=<%= request.getParameter("user_name") %>" class="btn btn-primary my-2">Registrar un cliente</a>
 
-        </p>
-      </div>
-    </div>
-  </section>
 
-  <hr class="featurette-divider">
-    <h2 style="text-align: center;">DETALLE DEL CLIENTE</h2>
-<%
 
-    int clientId = Integer.parseInt(request.getParameter("id"));
-        Class.forName("com.mysql.cj.jdbc.Driver");
-        Database.connect();
-        Client client = Database.jdbi.withExtension(ClientDAO2.class, dao -> dao.searchClient(clientId));
-%>
+    <%
 
-        <div class="container text-center">
+        int clientId = Integer.parseInt(request.getParameter("id"));
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            Database.connect();
+            Client client = Database.jdbi.withExtension(ClientDAO2.class, dao -> dao.searchClient(clientId));
+    %>
+
+        <div class="container text-center" style="margin-top: 100px;">
+        <h2 style="text-align: center;">DETALLE DEL CLIENTE</h2>
             <img src="../Tienda_data/<%= client.getImage() %>" alt="" style="width: 400px; margin-bottom: 20px; border-radius: 10%;">
         </div>
 

@@ -73,7 +73,7 @@ public class AddClientServlet extends HttpServlet {
                 dao.addClient(firstName, lastName, dni, address, city, email, password, telephone, fileName);
                 return null;
             });
-            response.sendRedirect("clientsUser.jsp?user_name=" + userName);
+            response.sendRedirect("clientOk.jsp?user_name=" + userName);
         } catch (ClassNotFoundException cnfe) {
             cnfe.printStackTrace();
         }
