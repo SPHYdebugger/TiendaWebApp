@@ -14,6 +14,7 @@ import java.util.List;
 
 public interface ProductDAO {
 
+
     @SqlQuery("SELECT * FROM products ORDER BY id_product DESC")
     @UseRowMapper(ProductMapper.class)
     List<Product> getProducts();
