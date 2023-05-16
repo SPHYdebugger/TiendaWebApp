@@ -11,18 +11,18 @@
 <%@ page import="java.util.List" %>
 
 
-<%@include file="includes/headerProducts.jsp"%>
+<%@include file="includes/headerIndex.jsp"%>
 <main>
 
   <section class="py-5 text-center container">
     <div class="row py-lg-5">
       <div class="col-lg-6 col-md-8 mx-auto">
         <h1 class="fw-light">BIENVENIDO A LA ZONA DE PRODUCTOS</h1>
-        <p class="lead text-body-secondary">Por favor elige una de las siguientes opciones</p>
-        <p>
-          <a href="registerProduct.jsp" class="btn btn-primary my-2">Registrar un producto</a>
-
-        </p>
+        <p class="lead text-body-secondary">Aqui puedes ver los productos disponibles</p>
+        <form action="searchProduct" method="post" class="form-inline mx-auto" style="justify-content: center;">
+          <input class="form-control mr-sm-2" name="search" method="post" type="text" id="search" placeholder="Buscar un producto" aria-label="Search">
+          <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">BUSCAR</button>
+        </form>
       </div>
     </div>
   </section>
@@ -54,8 +54,7 @@
                 <p class="card-text"><%= product.getFormat_p() %> ml.</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <a href="editProduct.jsp?id=<%= product.getId_product()%>&name_p=<%= product.getName_p()%>&description=<%= product.getDescription_p()%>&format=<%= product.getFormat_p()%>&price=<%= product.getPrice()%>&&image=<%= product.getImage()%>" class="btn btn-sm btn-outline-secondary">EDITAR</a>
-                    <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal<%= idc%>">BORRAR</button>
+
                     <a href="detailsProduct.jsp?id=<%= product.getId_product()%>" class="btn btn-sm btn-outline-secondary">VER DETALLES</a>
                   </div>
                   <small class="text-body-secondary"><%= product.getPrice() %> Euros </small>
@@ -64,24 +63,7 @@
 
             </div>
           </div>
-          <div class="modal fade" id="exampleModal<%= idc %>" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">CONFIRMACION DE BORRADO</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                  ¿Seguro que desea borrar el producto?
-                  Se borrarán las compras asociadas también
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                  <a href="deleteProduct?id=<%= product.getId_product()%>" type="button" class="btn btn-primary" >Aceptar</a>
-                </div>
-              </div>
-            </div>
-          </div>
+
 
           <%
               }

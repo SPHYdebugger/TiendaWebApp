@@ -53,9 +53,10 @@
               <a class="nav-link" href="#" style="color: black;">CONTACTO</a>
             </li>
           </ul>
-          <form action="searchClient" method="post" class="form-inline mt-2 mt-md-0 d-none">
-            <input class="form-control mr-sm-2" name="search" method="post" type="text" id="search" placeholder="Buscar un producto" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">BUSCAR</button>
+          <form action="logIn" method="post" class="form-inline mt-2 mt-md-0">
+            <input class="form-control mr-sm-2" name="user" method="post" type="text" id="user" placeholder="Usuario" aria-label="Search">
+            <input class="form-control mr-sm-2" name="password" method="post" type="password" id="password" placeholder="Contraseña" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">ENTRAR</button>
           </form>
 
         </div>

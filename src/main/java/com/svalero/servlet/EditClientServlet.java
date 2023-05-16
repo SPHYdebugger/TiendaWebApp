@@ -32,6 +32,8 @@ public class EditClientServlet extends HttpServlet {
         String password = request.getParameter("password");
         String telephone = request.getParameter("telephone");
 
+        String userName = request.getParameter("user_name");
+
 
         try {
 
@@ -41,8 +43,7 @@ public class EditClientServlet extends HttpServlet {
                 dao.modifyClient(firstName, lastName, dni, address, city, email, password, telephone, id);
                 return null;
             });
-            String url = "clientOk.jsp";
-            response.sendRedirect(url);
+            response.sendRedirect("clientsUser.jsp?user_name=" + userName);
         } catch (ClassNotFoundException cnfe) {
             cnfe.printStackTrace();
         }

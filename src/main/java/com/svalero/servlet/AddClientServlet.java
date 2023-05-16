@@ -46,6 +46,9 @@ public class AddClientServlet extends HttpServlet {
         String password = request.getParameter("password");
         String telephone = request.getParameter("telephone");
 
+        String userName = request.getParameter("user_name");
+
+
 
 
         try {
@@ -70,8 +73,7 @@ public class AddClientServlet extends HttpServlet {
                 dao.addClient(firstName, lastName, dni, address, city, email, password, telephone, fileName);
                 return null;
             });
-            String url = "clientOk.jsp";
-            response.sendRedirect(url);
+            response.sendRedirect("clientsUser.jsp?user_name=" + userName);
         } catch (ClassNotFoundException cnfe) {
             cnfe.printStackTrace();
         }
