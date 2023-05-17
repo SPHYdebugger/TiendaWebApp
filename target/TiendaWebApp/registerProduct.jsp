@@ -51,7 +51,7 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav mr-auto" >
             <li class="nav-item active">
-              <a class="nav-link" href="indexUser.jsp" style="color: black;">INICIO <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="indexUser.jsp?user_name=<%= request.getParameter("user_name") %>" style="color: black;">INICIO <span class="sr-only"></span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#" style="color: black;">EVENTOS</a>
@@ -68,14 +68,7 @@
     </header>
 <main>
 
-  <section class="py-5 text-center container">
-    <div class="row py-lg-5">
-      <div class="col-lg-6 col-md-8 mx-auto">
-        <h1 class="fw-light">BIENVENIDO A LA ZONA DE PRODUCTOS</h1>
 
-      </div>
-    </div>
-  </section>
 
   <hr class="featurette-divider">
     <h2 style="text-align: center;">REGISTRO DE PRODUCTO</h2>

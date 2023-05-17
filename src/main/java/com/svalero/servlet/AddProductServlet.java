@@ -58,7 +58,7 @@ public class AddProductServlet extends HttpServlet {
                 dao.addProduct(name, description, format, price, fileName);
                 return null;
             });
-            response.sendRedirect("productOk.jsp?user_name=" + userName);
+            response.sendRedirect("productsUser.jsp?user_name=" + userName);
 
         } catch (ClassNotFoundException cnfe) {
             cnfe.printStackTrace();
