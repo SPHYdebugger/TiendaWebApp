@@ -1,10 +1,5 @@
 <%@page contentType="text/html"%>
-<%@page pageEncoding="UTF-8"%>
 
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-<%@page contentType="text/html"%>
-<%@page pageEncoding="UTF-8"%>
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
@@ -50,7 +45,7 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav mr-auto" >
             <li class="nav-item active">
-              <a class="nav-link" href="indexUser.jsp" style="color: black;">INICIO <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="indexUser.jsp?user_name=<%= request.getParameter("user_name") %>" style="color: black;">INICIO <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#" style="color: black;">EVENTOS</a>
