@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="Tienda WEB APP" content="">
     <meta name="Santiago Perez" content="">
-    <link rel="icon" href="resources/flor.png">
+    <link rel="icon" href="../resources/flor.png">
 
     <title>STETIC100 Tienda WEB </title>
 
@@ -44,7 +44,7 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav mr-auto" >
             <li class="nav-item active">
-              <a class="nav-link" href="indexUser.jsp" style="color: black;">INICIO <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="indexUser.jsp?user_name=<%= request.getParameter("user_name") %>" style="color: black;">INICIO <span class="sr-only"></span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#" style="color: black;">EVENTOS</a>
